@@ -108,7 +108,7 @@
                     </div>
                     <div class="header-top__group">
                         <a class="header-top__phone" href="tel:8(963)2902111">8(963) 290-21-11</a>
-                        <button class="header-top__btn btn">
+                        <button class="header-top__btn btn" data-fancybox data-src="#popup-call">
                             <span>Заказать звонок</span>
                         </button>
                     </div>
@@ -213,16 +213,16 @@
 							<h1>
 								<span class="text_color">ПРОИЗВОДСТВО</span> <br>
 								сПОРТИВНОЙ <br>
-								<span class="text_color2">формЫ НА ЗАКАЗ</span>
+								<em>формЫ НА ЗАКАЗ</em>
 							</h1>
 							<p>для детских и взрослых лиг, <br> федераций, клубов</p>
 							<div class="main-section__group">
-								<a class="main-section__btn btn" href="">
+								<button class="main-section__btn btn" data-fancybox data-src="#order">
 									<span>Получить дизайн</span>
 									<i>
 										<img src="img/arrow.svg" alt="">
 									</i>
-								</a>
+								</button>
 								<div class="main-section__info">
 									Сделаем <span>3D-визуализацию</span> формы <br>для вашей команды бесплатно <br> <span>за 1 день</span> и рассчитаем стоимость пошива 
 								</div>
@@ -314,7 +314,7 @@
 				<div class="container-fluid">
 					<div class="services__inner">
 						<div class="services__top left-anim _anim-items anim-no-hide">
-							<h2><span class="text_color">Разрабатываем дизайн</span>  и производим спортивную форму </h2>
+							<h2><span class="text_color">Разрабатываем дизайн</span> и производим спортивную форму</h2>
 							<p>для любительских и профессиональных команд</p>
 						</div>
 						<div class="services__cards left-anim _anim-items anim-no-hide">
@@ -422,9 +422,9 @@
 							</a>
 						</div>
 						<div class="services__group">
-							<a class="services__btn btn btn-blue" href="">
+							<button class="services__btn btn btn-blue" data-fancybox data-src="#order">
 								<span>Консультация</span>
-							</a>
+							</button>
 							<div class="services__info">
 								Соберем <span>форму и экипировку</span> <br>для вашей команды
 							</div>
@@ -1157,7 +1157,7 @@
 							</div>
 						</div>
 						<div class="advantages2__group">
-							<a class="advantages2__btn btn btn-blue" href="">
+							<a class="advantages2__btn btn btn-blue" href="" data-fancybox data-src="#order">
 								<span>Макет + РАСЧЕТ</span>
 							</a>
 							<div class="advantages2__info">
@@ -1246,14 +1246,48 @@
 				</div>
 			</section>
 			<section class="feedbacks">
-				<div class="container-fluid">
-					<div class="feedbacks__top">
-						<h2>Видеоотзывы от тренеров <br> и директоров спортивных клубов </h2>
+				<div class="feedbacks__img">
+					<img src="img/feedbacks-img.svg" alt="">
+				</div>
+				<div class="feedbacks__wrap">
+					<div class="container-fluid">
+						<div class="feedbacks__top">
+							<h2>Видеоотзывы от тренеров <br> и директоров спортивных клубов </h2>
+						</div>
+					</div>
+					<div class="feedbacks__video">
+						<div class="video js-video">
+							<a class="video__link" href="https://youtu.be/<? echo $YouTube_ID; ?>" id="c9DIoSNoQNs">
+								<picture>
+									<source srcset="https://i.ytimg.com/vi_webp/<? echo $YouTube_ID; ?>/maxresdefault.webp" type="image/webp">
+									<img class="video__media" src="https://i.ytimg.com/vi/<? echo $YouTube_ID; ?>/maxresdefault.jpg" alt="">
+								</picture>
+							</a>
+							<button class="video__button" aria-label="Запустить видео">
+								<svg width="68" height="48" viewBox="0 0 68 48">
+									<path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+									<path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+								</svg>
+							</button>
+						</div>
+						<div class="video js-video">
+							<a class="video__link" href="https://youtu.be/<? echo $YouTube_ID; ?>" id="__-vp0g_BhA">
+								<picture>
+									<source srcset="https://i.ytimg.com/vi_webp/<? echo $YouTube_ID; ?>/maxresdefault.webp" type="image/webp">
+									<img class="video__media" src="https://i.ytimg.com/vi/<? echo $YouTube_ID; ?>/maxresdefault.jpg" alt="">
+								</picture>
+							</a>
+							<button class="video__button" aria-label="Запустить видео">
+								<svg width="68" height="48" viewBox="0 0 68 48">
+									<path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+									<path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+								</svg>
+							</button>
+						</div>
 					</div>
 				</div>
-				<div class="feedbacks__video">
-					<iframe loading="lazy" src="https://www.youtube.com/embed/c9DIoSNoQNs?si=9fJ37txdMzLQVRJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<iframe loading="lazy" src="https://www.youtube.com/embed/c9DIoSNoQNs?si=9fJ37txdMzLQVRJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="feedbacks__img2">
+					<img src="img/feedbacks-img2.svg" alt="">
 				</div>
 			</section>
 			<section class="connection">
@@ -1280,7 +1314,7 @@
 									<div class="select__wrap">
 										<ul class="select__list-default">
 											<li class="select__current">
-												Для какого спорта нужна форма
+												<span>Для какого спорта нужна форма</span>
 												<i>
 													<img src="img/arrow3.svg" alt="">
 												</i>
@@ -1301,7 +1335,7 @@
 								</div>
 								<div class="form-checkboxes">
 									<div class="form-checkbox">
-										<input type="radio" name="radio">
+										<input type="radio" name="radio" checked>
 										<label>Взрослая</label>
 									</div>
 									<div class="form-checkbox">
@@ -1382,7 +1416,7 @@
                                 <div class="footer__subtitle">Экипировка</div>
                             </div>
                         </div>
-                        <div class="footer__item">
+                        <div class="footer__item footer__item2">
                             <div class="footer__item-group">
                                 <div class="footer__subtitle">Брендирование спортивной одежды</div>
                                 <ul>
@@ -1405,7 +1439,7 @@
                     <div class="footer__subtitle">Контакты</div>
                     <div class="footer__group3">
                         <a class="footer__phone" href="tel:8(963)2902111">8(963) 290-21-11</a>
-                        <button class="footer__btn btn">
+                        <button class="footer__btn btn" data-fancybox data-src="#popup-call">
                             <span>Заказать звонок</span>
                         </button>
                     </div>
@@ -1450,6 +1484,56 @@
     </div>
 </footer>
 
+
+
+		<div class="popups">
+			<div id="popup-call" class="popup">
+				<div class="form left-anim _anim-items anim-no-hide active">
+					<div class="form-head">
+						<span class="text_color">Оставьте заявку
+					</div>
+					<form method="POST" action="" class="form_block">
+						<div class="form-field form-group">
+							<input type="text" name="name1" placeholder="Ваше имя" class="form-control " data-validation="valid">
+						</div>
+						<div class="form-field form-group">
+							<input type="tel" name="phone" placeholder="Ваш номер телефона" class="form-control required  inp" data-validation="invalid">
+						</div>
+						<button class="form__btn btn btn-blue disabled">
+							<span>Получить</span>
+						</button>
+						<div class="agreement-check">
+							<input class="agreement" type="checkbox" checked="checked" name="Agreement" data-validation="valid">
+							<label class="agreement-label label-none">Я даю свое согласие с <a href="">политикой конфиденциальности</a> в отношении обработки персональных данных</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popups">
+			<div id="order" class="popup">
+				<div class="form left-anim _anim-items anim-no-hide active">
+					<div class="form-head">
+						<span class="text_color">Оставьте заявку
+					</div>
+					<form method="POST" action="" class="form_block">
+						<div class="form-field form-group">
+							<input type="text" name="name1" placeholder="Ваше имя" class="form-control " data-validation="valid">
+						</div>
+						<div class="form-field form-group">
+							<input type="tel" name="phone" placeholder="Ваш номер телефона" class="form-control required  inp" data-validation="invalid">
+						</div>
+						<button class="form__btn btn btn-blue disabled">
+							<span>Получить</span>
+						</button>
+						<div class="agreement-check">
+							<input class="agreement" type="checkbox" checked="checked" name="Agreement" data-validation="valid">
+							<label class="agreement-label label-none">Я даю свое согласие с <a href="">политикой конфиденциальности</a> в отношении обработки персональных данных</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/base.min.js"></script>
 <script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/validate.min.js"></script>
